@@ -86,12 +86,12 @@ public class Inventory {
         if (mainInventory.isEmpty()) {
             System.out.println("No books are currently available.");
             return;
-        }
-
-        System.out.println("\nAvailable Books:");
-        for (Book book : mainInventory) {
-            book.printBookInfo();
-            System.out.println("----------");
+        } else {
+            System.out.println("\nAvailable Books:");
+            for (Book book : mainInventory) {
+                book.printBookInfo();
+                System.out.println("----------");
+            }
         }
     }
 
